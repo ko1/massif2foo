@@ -1,7 +1,7 @@
 # usage:
 #
 #   $ valgrind --tool=massif --detailed-freq=1 --threshold=0.1 --stacks=yes --massif-out-file=massif.out.`date '+%s'` --max-snapshots=1000 [cmd] [args...]
-#   $ ruby massif2foo.rb massif.out
+#   $ ruby massif2foo.rb [--collect_key (file|func|line)] massif.out...
 #
 
 module MassifParser
